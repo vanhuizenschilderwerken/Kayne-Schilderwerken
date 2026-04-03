@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.kayneschilderwerken.nl/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kayneschilderwerken.nl/over-ons</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kayneschilderwerken.nl/offerte-aanvragen</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kayneschilderwerken.nl/cookiesbeleid</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kayneschilderwerken.nl/privacybeleid</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kayneschilderwerken.nl/algemene-voorwaarden</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kayneschilderwerken.nl/blog-twente</loc>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
