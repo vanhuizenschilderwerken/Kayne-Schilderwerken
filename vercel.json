@@ -7,6 +7,7 @@
     { "source": "/privacybeleid", "destination": "/privacybeleid.html" }
   ],
   "redirects": [
+    { "source": "/index.html", "destination": "/home", "permanent": true }
     { "source": "/over-ons.html", "destination": "/over-ons", "permanent": true },
     { "source": "/diensten.html", "destination": "/diensten", "permanent": true },
     { "source": "/contact-opnemen.html", "destination": "/contact-opnemen", "permanent": true },
