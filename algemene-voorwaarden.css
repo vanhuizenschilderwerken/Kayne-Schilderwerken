@@ -1,0 +1,192 @@
+.voorwaarden-hero{
+  padding: var(--space-6) 0 var(--space-5);
+}
+
+.voorwaarden-hero-grid{
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: var(--space-4);
+  align-items:start;
+}
+
+.voorwaarden-meta{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.voorwaarden-meta-card,
+.voorwaarden-side-card,
+.voorwaarden-nav-card,
+.voorwaarden-card,
+.voorwaarden-cta{
+  background: rgba(255,255,255,.86);
+  border: 1px solid rgba(155,122,69,.16);
+  box-shadow: var(--shadow-soft);
+  border-radius: 10px;
+}
+
+.voorwaarden-meta-card{
+  padding: 1rem 1.1rem;
+  display:flex;
+  flex-direction:column;
+  gap:.25rem;
+}
+
+.voorwaarden-meta-card strong{
+  color: var(--text);
+}
+
+.voorwaarden-meta-card span{
+  color: var(--muted);
+}
+
+.voorwaarden-side-card{
+  padding: 1.25rem;
+}
+
+.voorwaarden-side-card h2{
+  margin-bottom: 1rem;
+}
+
+.voorwaarden-list{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:.8rem;
+}
+
+.voorwaarden-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:.7rem;
+  color: var(--muted);
+}
+
+.voorwaarden-list li::before{
+  content:"";
+  width:10px;
+  height:10px;
+  margin-top:.45rem;
+  border-radius:2px;
+  background: var(--brand);
+  flex:0 0 auto;
+}
+
+.voorwaarden-layout{
+  display:grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-4);
+  align-items:start;
+}
+
+.voorwaarden-nav{
+  position:sticky;
+  top:110px;
+}
+
+.voorwaarden-nav-card{
+  padding: 1.2rem;
+  display:grid;
+  gap:.65rem;
+}
+
+.voorwaarden-nav-card h2{
+  margin-bottom:.4rem;
+}
+
+.voorwaarden-nav-card a{
+  font-weight:700;
+  color: rgba(47,41,36,.86);
+  padding:.55rem .7rem;
+  border-radius:6px;
+  transition: background .2s ease, color .2s ease;
+}
+
+.voorwaarden-nav-card a:hover{
+  background: var(--brand-soft);
+  color: var(--brand-dark);
+}
+
+.voorwaarden-content{
+  display:grid;
+  gap: var(--space-3);
+}
+
+.voorwaarden-card{
+  padding: 1.4rem;
+}
+
+.voorwaarden-card h2{
+  margin-bottom: .8rem;
+}
+
+.voorwaarden-card p:last-child{
+  margin-bottom:0;
+}
+
+.voorwaarden-cta{
+  padding: 1.4rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.2rem;
+}
+
+@media (max-width: 980px){
+  .voorwaarden-hero-grid,
+  .voorwaarden-layout,
+  .voorwaarden-meta{
+    grid-template-columns:1fr;
+  }
+
+  .voorwaarden-nav{
+    position:static;
+  }
+
+  .voorwaarden-cta{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+
+@media (max-width: 760px){
+  .voorwaarden-card,
+  .voorwaarden-side-card,
+  .voorwaarden-nav-card,
+  .voorwaarden-cta{
+    padding:1.1rem;
+  }
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap:1.5rem;
+}
+
+.footer-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.made-by{
+  font-size:0.9rem;
+  color:var(--muted);
+  text-decoration:none;
+  transition:color 0.2s ease;
+}
+
+.made-by:hover{
+  color:var(--brand);
+}
+
+.muted{
+  color:var(--muted);
+  font-size: 14px;
+}

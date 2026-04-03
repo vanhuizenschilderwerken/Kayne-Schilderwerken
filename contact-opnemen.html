@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact opnemen • Kayne Schilderwerken</title>
+  <meta name="description" content="Vraag vrijblijvend een offerte aan bij Kayne Schilderwerken. Voor binnen- en buitenschilderwerk, spuitwerk, sauswerk, behangen, houtrotreparatie, glaszetten en kitwerk." />
+  <link rel="canonical" href="https://jouwdomein.nl/contact-opnemen." />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .contact-hero-card,
+    .contact-info-card,
+    .contact-step-card{
+      background: rgba(255,255,255,.84);
+      border: 1px solid rgba(155,122,69,.16);
+      box-shadow: var(--shadow-soft);
+      border-radius: 10px;
+    }
+
+    .contact-hero-card{
+      padding: 0.5rem;
+    }
+
+    .contact-hero-list{
+      margin: 1rem 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: .7rem;
+    }
+
+    .contact-hero-list li{
+      display: flex;
+      align-items: flex-start;
+      gap: .65rem;
+    }
+
+    .contact-hero-list li::before{
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin-top: .45rem;
+      border-radius: 2px;
+      background: var(--brand);
+      flex: 0 0 auto;
+    }
+
+    .contact-card-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-3);
+    }
+
+    .contact-info-card,
+    .contact-step-card{
+      padding: 1.2rem;
+    }
+
+    .contact-info-card p,
+    .contact-step-card p{
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .contact-card-icon{
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 6px;
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      margin-bottom: 1rem;
+    }
+
+    .contact-card-icon svg{
+      width: 22px;
+      height: 22px;
+    }
+
+    .contact-form-wrap{
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+
+    .contact-note{
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1rem;
+      color: var(--muted);
+    }
+
+    .contact-note strong{
+      color: var(--text);
+    }
+
+    .contact-extra-points{
+      display: grid;
+      gap: .8rem;
+      margin-top: var(--space-3);
+    }
+
+    .contact-extra-point{
+      display: flex;
+      gap: .8rem;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: .95rem 1rem;
+    }
+
+    .contact-extra-point svg{
+      width: 18px;
+      height: 18px;
+      color: var(--brand-dark);
+      flex: 0 0 auto;
+      margin-top: .15rem;
+    }
+
+    @media (max-width: 980px){
+      .contact-card-grid,
+      .contact-form-wrap{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Direct naar inhoud</a>
+
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Kayne Schilderwerken home">
+        <img class="brand-logo" src="Logo Kayne Schilderwerken.png" alt="Kayne Schilderwerken logo">
+      </a>
+
+      <nav class="nav" aria-label="Hoofdnavigatie">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div id="navMenu" class="nav-menu">
+          <a href="/over-ons">Over ons</a>
+          <a href="/diensten">Diensten</a>
+          <a href="/contact-opnemen" class="btn btn-primary">Contact opnemen</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="kicker">Vrijblijvend contact</p>
+          <h1>
+            Vraag eenvoudig een
+            <span class="accent"><em>offerte op maat</em></span> aan
+          </h1>
+          <p class="lead">
+            Heb je schilderwerk, sauswerk, spuitwerk, behangwerk of herstelwerkzaamheden?
+            Vul het formulier in en wij nemen contact met je op voor een vrijblijvende opname en een nette prijsopgave.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#offerte-formulier">Offerte aanvragen</a>
+            <a class="btn btn-ghost" href="diensten.html">Bekijk diensten</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="contact-hero-card">
+            <img src="Kayne Schilderwerk Afbeelding Werkbus 2.jpg" alt="Werkbus van Kayne Schilderwerken" class="hero-logo">
+          </div>
+        </div>
+      </div>
+
+      <div class="container usp-row">
+        <article class="usp-card reveal">
+          <div class="usp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12h16"></path>
+              <path d="M12 4v16"></path>
+            </svg>
+          </div>
+          <h3>Snel contact</h3>
+          <p>Na je aanvraag nemen we zo snel mogelijk contact met je op om de werkzaamheden te bespreken.</p>
+        </article>
+
+        <article class="usp-card reveal">
+          <div class="usp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z"></path>
+            </svg>
+          </div>
+          <h3>Duidelijke afspraak</h3>
+          <p>We bespreken helder wat er moet gebeuren, wat je kunt verwachten en hoe we het aanpakken.</p>
+        </article>
+
+        <article class="usp-card reveal">
+          <div class="usp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12l6 6L21 6"></path>
+            </svg>
+          </div>
+          <h3>Vrijblijvende offerte</h3>
+          <p>Je ontvangt een nette offerte op maat, zonder verplichtingen en zonder onduidelijkheden.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Hoe het werkt</p>
+          <h2>Offerte aanvragen in 3 stappen</h2>
+          <p class="section-lead">
+            We houden het graag overzichtelijk en persoonlijk, zodat je snel weet waar je aan toe bent.
+          </p>
+        </div>
+
+        <div class="contact-card-grid">
+          <article class="contact-step-card reveal">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 5h16v14H4z"></path>
+                <path d="M4 7l8 6 8-6"></path>
+              </svg>
+            </div>
+            <h3>1. Stuur je aanvraag</h3>
+            <p>Vul het formulier in met je gegevens en geef aan om welke werkzaamheden het gaat.</p>
+          </article>
+
+          <article class="contact-step-card reveal">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20h16"></path>
+                <path d="M7 16l8-8 2 2-8 8H7v-2z"></path>
+              </svg>
+            </div>
+            <h3>2. We bekijken het werk</h3>
+            <p>Waar nodig plannen we een vrijblijvende opname in om het werk goed te kunnen beoordelen.</p>
+          </article>
+
+          <article class="contact-step-card reveal">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h9l3 3v15H6z"></path>
+                <path d="M15 3v4h4"></path>
+                <path d="M9 13h6"></path>
+                <path d="M9 17h6"></path>
+              </svg>
+            </div>
+            <h3>3. Je ontvangt een offerte</h3>
+            <p>Daarna ontvang je een duidelijke offerte met een passende prijsopgave voor jouw situatie.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="offerte-formulier" class="section">
+      <div class="container contact-form-wrap">
+        <div class="contact-copy reveal">
+          <p class="section-kicker">Contact opnemen</p>
+          <h2>Vraag direct een offerte aan</h2>
+          <p class="section-lead">
+            Vul hieronder je gegevens in en omschrijf kort de werkzaamheden. Hoe duidelijker je aanvraag, hoe beter wij je kunnen helpen.
+          </p>
+
+          <div class="contact-points">
+            <div class="contact-point"><strong>Bedrijf:</strong> Kayne Schilderwerken</div>
+            <div class="contact-point"><strong>Plaats:</strong> Enschede</div>
+            <div class="contact-point"><strong>KvK:</strong> 95535012</div>
+          </div>
+
+          <div class="contact-note" style="margin-top: var(--space-3);">
+            <strong>Tip:</strong> vermeld in je bericht bijvoorbeeld of het om binnen- of buitenschilderwerk gaat, hoeveel ruimtes of kozijnen het betreft en of er herstelwerk nodig is.
+          </div>
+        </div>
+
+        <form class="form reveal" autocomplete="on">
+          <div class="field">
+            <label for="naam">Naam</label>
+            <input id="naam" name="naam" type="text" placeholder="Je naam" required>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mailadres</label>
+            <input id="email" name="email" type="email" placeholder="naam@voorbeeld.nl" required>
+          </div>
+
+          <div class="field">
+            <label for="telefoon">Telefoonnummer</label>
+            <input id="telefoon" name="telefoon" type="tel" placeholder="06 12345678">
+          </div>
+
+          <div class="field">
+            <label for="plaats">Plaats</label>
+            <input id="plaats" name="plaats" type="text" placeholder="Bijvoorbeeld Enschede">
+          </div>
+
+          <div class="field">
+            <label for="dienst">Dienst</label>
+            <select id="dienst" name="dienst" required>
+              <option value="" disabled selected>Kies een dienst</option>
+              <option>Binnenschilderwerk</option>
+              <option>Buitenschilderwerk</option>
+              <option>Spuitwerk</option>
+              <option>Sauswerk</option>
+              <option>Behangen</option>
+              <option>Houtrotreparatie</option>
+              <option>Glaszetten</option>
+              <option>Kitwerk</option>
+              <option>Kleine herstelklussen</option>
+              <option>Meerdere werkzaamheden</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="uitvoering">Gewenste periode</label>
+            <select id="uitvoering" name="uitvoering">
+              <option value="" selected>Kies een periode</option>
+              <option>Zo snel mogelijk</option>
+              <option>Binnen 1 maand</option>
+              <option>Binnen 3 maanden</option>
+              <option>Later in overleg</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="locatie-type">Type locatie</label>
+            <select id="locatie-type" name="locatie-type">
+              <option value="" selected>Kies een type</option>
+              <option>Woning</option>
+              <option>Appartement</option>
+              <option>Bedrijfspand</option>
+              <option>Overig</option>
+            </select>
+          </div>
+
+          <div class="field field--full">
+  <label>Kleurvoorkeur (Optioneel)</label>
+  <div class="color-swatch-container">
+    <input type="hidden" name="gekozen_ral_kleur" id="selected-ral" value="Nog geen keuze">
+    
+    <div class="swatches">
+      <button type="button" class="swatch" data-name="RAL 9010 (Zuiver wit)" title="RAL 9010" style="background-color: #F1F0EA;"></button>
+      <button type="button" class="swatch" data-name="RAL 9016 (Verkeerswit)" title="RAL 9016" style="background-color: #F6F6F6;"></button>
+      <button type="button" class="swatch" data-name="RAL 9001 (Crèmewit)" title="RAL 9001" style="background-color: #E7EBDA;"></button>
+      <button type="button" class="swatch" data-name="RAL 7016 (Antraciet)" title="RAL 7016" style="background-color: #2F353B;"></button>
+      <button type="button" class="swatch" data-name="RAL 7021 (Zwartgrijs)" title="RAL 7021" style="background-color: #202A30;"></button>
+      <button type="button" class="swatch" data-name="RAL 6009 (Dennengroen)" title="RAL 6009" style="background-color: #212C1F;"></button>
+      <button type="button" class="swatch" data-name="RAL 9005 (Gitzwart)" title="RAL 9005" style="background-color: #1D1E22;"></button>
+      <button type="button" class="swatch-other" id="btn-custom-color" title="Andere kleur">?</button>
+    </div>
+    <p id="color-display-name" class="fineprint">Klik op een kleur om te selecteren</p>
+    
+    <input type="text" id="custom-color-input" name="andere_kleur" placeholder="Voer RAL code of kleurnaam in..." style="display:none; margin-top: 10px; width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1);">
+  </div>
+</div>
+
+<div class="field field--full">
+  <label for="adres">Adres</label>
+  <input id="adres" name="adres" type="text" placeholder="Straatnaam en huisnummer" />
+</div>
+
+          <div class="field field--full">
+            <label for="bericht">Bericht</label>
+            <textarea id="bericht" name="bericht" rows="7" placeholder="Omschrijf kort wat er gedaan moet worden." required></textarea>
+          </div>
+
+          <div class="field field--full">
+            <button class="btn btn-primary btn-block" type="submit">Verstuur aanvraag</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img class="brand-logo footer-logo" src="Logo Kayne Schilderwerken.png" alt="Kayne Schilderwerken logo">
+      <p class="muted">Kayne Schilderwerken — strak, netjes en betrouwbaar schilderwerk in Enschede en omgeving.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Menu</h3>
+      <a href="/over-ons.html">Over ons</a>
+      <a href="/diensten.html">Diensten</a>
+      <a href="/contact-opnemen.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Bedrijfsinfo</h3>
+      <p class="muted">Enschede</p>
+      <p class="muted">KvK: 95535012</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Bedrijfsbeleid</h3>
+      <a href="/algemene-voorwaarden">Algemene voorwaarden</a>
+      <a href="/privacybeleid">Privacybeleid</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+  <span>© <span id="year"></span> Kayne Schilderwerken</span>
+
+  <a 
+    href="https://www.instagram.com/ewunnink._/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="made-by"
+  >
+    Made by Ewunnink._
+  </a>
+</div>
+</footer>
+    <div class="whatsapp-wrapper">
+  <button
+    id="kayne-whatsapp-button"
+    class="whatsapp-button"
+    aria-label="Open WhatsApp chat"
+    type="button"
+  >
+     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+        <path d="M24 11.7c0 6.45-5.27 11.68-11.78 11.68-2.07 0-4-.53-5.7-1.45L0 24l2.13-6.27a11.57 11.57 0 0 1-1.7-6.04C.44 5.23 5.72 0 12.23 0 18.72 0 24 5.23 24 11.7M12.22 1.85c-5.46 0-9.9 4.41-9.9 9.83 0 2.15.7 4.14 1.88 5.76L2.96 21.1l3.8-1.2a9.9 9.9 0 0 0 5.46 1.62c5.46 0 9.9-4.4 9.9-9.83a9.88 9.88 0 0 0-9.9-9.83m5.95 12.52c-.08-.12-.27-.19-.56-.33-.28-.14-1.7-.84-1.97-.93-.26-.1-.46-.15-.65.14-.2.29-.75.93-.91 1.12-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.43a8.64 8.64 0 0 1-1.6-1.98c-.18-.29-.03-.44.12-.58.13-.13.29-.34.43-.5.15-.17.2-.3.29-.48.1-.2.05-.36-.02-.5-.08-.15-.65-1.56-.9-2.13-.24-.58-.48-.48-.64-.48-.17 0-.37-.03-.56-.03-.2 0-.5.08-.77.36-.26.29-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.96.14.19 2 3.17 4.93 4.32 2.94 1.15 2.94.77 3.47.72.53-.05 1.7-.7 1.95-1.36.24-.67.24-1.25.17-1.37"></path>
+      </svg>
+  </button>
+
+  <div
+    id="kayne-whatsapp-chat"
+    class="whatsapp-chat"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="kayne-whatsapp-title"
+  >
+
+    <div class="whatsapp-chat-header">
+      <div class="whatsapp-chat-header-text">
+        <h3 id="kayne-whatsapp-title">Kayne Schilderwerken</h3>
+        <p>De snelste manier om contact <br>met ons op te nemen</p>
+      </div>
+
+      <button
+        id="kayne-chat-close"
+        class="whatsapp-chat-close"
+        type="button"
+        aria-label="Sluiten"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div class="whatsapp-chat-body">
+      <p>Hey 👋 Waar kunnen we je mee helpen?</p>
+    </div>
+
+    <div class="whatsapp-chat-footer">
+      <input
+        id="kayne-chat-input"
+        type="text"
+        placeholder="Typ een bericht..."
+        aria-label="Typ een WhatsApp bericht"
+      >
+
+      <button
+        id="kayne-chat-send"
+        class="whatsapp-send-button"
+        type="button"
+        aria-label="Versturen"
+      >
+        ➤
+      </button>
+    </div>
+
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
