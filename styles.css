@@ -18,8 +18,7 @@
   --container: 1240px;
 
   --font-sans: "Manrope", system-ui, sans-serif;
-  --font-serif: "Playfair Display", Georgia, serif;
-
+  --font-serif: "Playfair Display", Georgia, serif;a
   --step--1: clamp(.88rem, .84rem + .18vw, .95rem);
   --step-0: clamp(1rem, .96rem + .25vw, 1.08rem);
   --step-1: clamp(1.18rem, 1.06rem + .5vw, 1.35rem);
@@ -344,8 +343,8 @@ h3{ font-size:var(--step-1); }
 
 .about-logo-card{
   padding: 0.5rem;
-  background: var(--brand-light);
-  border: 1px solid var(--brand-light);
+  background: #fff;
+  border: 1px solid #fff;
   border-radius: 12px;
 }
 
