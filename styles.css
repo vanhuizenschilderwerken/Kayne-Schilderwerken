@@ -11,10 +11,10 @@
   --brand-light: #c6a15a;
   --brand-soft: rgba(166, 124, 46, 0.12);
 
-  --accent: #a67c2e;
+  --accent: #3a322b;
   --radius: 8px;
   --shadow: 0 16px 40px rgba(58, 40, 18, 0.10);
-  --shadow-soft: 0 10px 24px rgba(58, 40, 18, 0.08); 
+  --shadow-soft: 0 10px 24px rgba(58, 40, 18, 0.08);
   --container: 1240px;
 
   --font-sans: "Manrope", system-ui, sans-serif;
@@ -182,6 +182,28 @@ h3{ font-size:var(--step-1); }
 }
 .btn-block{ width:100%; }
 
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:var(--space-6) 0 var(--space-5);
+}
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(900px 450px at 85% 5%, rgba(199,175,133,.18), transparent 60%),
+    radial-gradient(800px 420px at 0% 30%, rgba(155,122,69,.10), transparent 55%),
+    linear-gradient(180deg, rgba(255,255,255,.4), rgba(255,255,255,0));
+  pointer-events:none;
+}
+.hero-grid{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:var(--space-4);
+  align-items:center;
+}
 .kicker,
 .section-kicker{
   display:inline-flex;
@@ -226,42 +248,12 @@ h3{ font-size:var(--step-1); }
 .section-lead-light{ color:rgba(255,255,255,.82); }
 
 .accent{
-  color:var(--brand);
+  color:var(--brand-dark);
   position:relative;
 }
 
 .accent::after{
   display:none;
-}
-
-.hero{
-  position: relative;
-  overflow: hidden;
-  min-height: 85vh;
-  display: flex;
-  align-items: center;   /* verticale centrering */
-  padding: 0;
-  color: #fff;
-}
-
-.hero-copy{
-  max-width: 720px;
-  margin-left: 0;
-  padding: 120px 0;
-}
-
-.hero h1,
-.hero .kicker,
-.hero .lead {
-  color: #fff;
-}
-
-.hero .lead {
-  color: #fff;
-}
-
-.hero .accent {
-  color: --brand-light: #c6a15a;
 }
 
 .hero-actions{
@@ -285,19 +277,20 @@ h3{ font-size:var(--step-1); }
   font-size:var(--step--1);
 }
 
-.hero-panel{
-  display: none;
+.hero-card{
+  background: #ffffff;
+  border:1px solid rgba(155,122,69,.16);
+  box-shadow:var(--shadow);
+  border-radius:10px;
+  padding: 0.5rem;
 }
 
-.hero-grid{
-  grid-template-columns: 1fr;
-}
-
-.hero-bg{
-  position: absolute;
-  inset: 0;
-  background:
-    url("Kayne Schilderwerk Afbeelding 28.jpg") center/cover no-repeat;
+.hero-logo{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:6px;
 }
 
 .hero-card-title{
@@ -340,15 +333,12 @@ h3{ font-size:var(--step-1); }
 .service-card,
 .feature-card,
 .info-box,
-
-
 .about-logo-card{
-  padding: 0.5rem;
-  background: var(--brand-light);
-  border: 1px solid var(--brand-light);
-  border-radius: 12px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow-soft);
+  border-radius:8px;
 }
-
 .usp-card{
   padding:1.2rem;
 }
@@ -371,10 +361,7 @@ h3{ font-size:var(--step-1); }
 }
 
 .section{ padding:var(--space-6) 0; }
-
 .section-soft{
-  position: relative;
-  z-index: 2;
   background:
     radial-gradient(1000px 300px at 10% 0%, rgba(199,175,133,.12), transparent 60%),
     radial-gradient(900px 300px at 90% 100%, rgba(155,122,69,.08), transparent 60%),
@@ -407,26 +394,14 @@ h3{ font-size:var(--step-1); }
   gap:1rem;
   margin:var(--space-3) 0;
 }
-
 .info-box{
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: .35rem;
-  background: var(--brand-light);
-  border: 1px solid var(--brand-light); 
-  color: #fff;
-  border-radius: 12px;
+  padding:1rem;
+  display:flex;
+  flex-direction:column;
+  gap:.35rem;
 }
-
-.info-box strong{
-  font-size: .95rem;
-  color: #fff;
-}
-
-.info-box span{
-  color: rgba(255,255,255,0.88);
-}
+.info-box strong{ font-size:.95rem; }
+.info-box span{ color:var(--muted); }
 
 .checklist{
   list-style:none;
