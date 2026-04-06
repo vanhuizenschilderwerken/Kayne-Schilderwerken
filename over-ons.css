@@ -167,11 +167,13 @@ transition:transform .2s ease, filter .2s ease, background .2s ease;
 background:linear-gradient(135deg, var(--brand-light), var(--brand));
 color:#fff;
 box-shadow:var(--shadow-soft);
+border-radius: 6px;
 }
 .btn-primary:hover{
 filter:brightness(.97);
 }
-.site-header .btn-primary{ color:#fff !important; }
+.site-header .btn-primary{ color:#fff !important; border-radius: 6px;}
+
 
 .btn-ghost{
 background:rgba(255,255,255,.7);
