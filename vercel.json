@@ -1,4 +1,5 @@
-"rewrites": [
+{
+  "rewrites": [
     { "source": "/over-ons", "destination": "/over-ons.html" },
     { "source": "/diensten", "destination": "/diensten.html" },
     { "source": "/contact-opnemen", "destination": "/contact-opnemen.html" },
@@ -12,3 +13,4 @@
     { "source": "/algemene-voorwaarden.html", "destination": "/algemene-voorwaarden", "permanent": true },
     { "source": "/privacybeleid.html", "destination": "/privacybeleid", "permanent": true }
   ]
+}
