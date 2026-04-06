@@ -421,7 +421,7 @@ h3{ font-size:var(--step-1); }
 
 .info-box strong{
   font-size: .95rem;
-  color: #fff;
+  color: 000;
 }
 
 .info-box span{
