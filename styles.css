@@ -14,7 +14,7 @@
   --accent: #a67c2e;
   --radius: 8px;
   --shadow: 0 16px 40px rgba(58, 40, 18, 0.10);
-  --shadow-soft: 0 10px 24px rgba(58, 40, 18, 0.08);
+  --shadow-soft: 0 10px 24px rgba(58, 40, 18, 0.08); 
   --container: 1240px;
 
   --font-sans: "Manrope", system-ui, sans-serif;
