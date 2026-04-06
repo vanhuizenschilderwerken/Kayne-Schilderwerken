@@ -1,8 +1,14 @@
-{
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+"rewrites": [
+    { "source": "/over-ons", "destination": "/over-ons.html" },
+    { "source": "/diensten", "destination": "/diensten.html" },
+    { "source": "/contact-opnemen", "destination": "/contact-opnemen.html" },
+    { "source": "/algemene-voorwaarden", "destination": "/algemene-voorwaarden.html" },
+    { "source": "/privacybeleid", "destination": "/privacybeleid.html" }
+  ],
+  "redirects": [
+    { "source": "/over-ons.html", "destination": "/over-ons", "permanent": true },
+    { "source": "/diensten.html", "destination": "/diensten", "permanent": true },
+    { "source": "/contact-opnemen.html", "destination": "/contact-opnemen", "permanent": true },
+    { "source": "/algemene-voorwaarden.html", "destination": "/algemene-voorwaarden", "permanent": true },
+    { "source": "/privacybeleid.html", "destination": "/privacybeleid", "permanent": true }
   ]
-}
