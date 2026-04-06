@@ -265,8 +265,8 @@ h3{ font-size:var(--step-1); }
 }
 
 .hero-card{
-  background:rgba(255,255,255,.8);
-  border:1px solid rgba(155,122,69,.16);
+  background: var(--brand-light);
+  border: 1px solid var(--brand-light);
   box-shadow:var(--shadow);
   border-radius:10px;
   padding: 0.5rem;
