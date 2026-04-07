@@ -295,7 +295,7 @@ h3{ font-size:var(--step-1); }
 .hero-bg{
   position: absolute;
   inset: 0;
-  background:
+  background: rgba(0,0,0,0.35);
     url("Kayne Schilderwerk Afbeelding 28.jpg") center/cover no-repeat;
 }
 
