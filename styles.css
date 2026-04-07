@@ -297,6 +297,8 @@ h3{ font-size:var(--step-1); }
   inset: 0;
   background: rgba(0,0,0,0.35);
     url("Kayne Schilderwerk Afbeelding 28.jpg") center/cover no-repeat;
+   background-size: cover;
+  background-position: center;
 }
 
 .hero-card-title{
